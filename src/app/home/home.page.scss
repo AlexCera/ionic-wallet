@@ -1,27 +1,78 @@
-#container {
-  text-align: center;
+ion-header {
+  background: transparent;
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  ion-item {
+    --background: transparent;
+  }
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
+ion-content {
+  .main-header {
+    height: 45vh;
+    width: 150%;
+    background: linear-gradient(90deg, var(--ion-color-os-dark) 10%, var(--ion-color-os-blue) 100%);
+    box-shadow: 0 1px 10px var(--ion-color-light);
+    border-radius: 0 0 50% 50%;
+    margin-left: -15vh;
+    margin-top: -60px;
+  }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
+  ion-grid {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(10vh);
+    padding-bottom: 8vh;
 
-  color: #8c8c8c;
+    ion-row {
+      ion-col {
+        ion-label {
+          ion-note {
+            font-size: 1rem;
+          }
 
-  margin: 0;
-}
+          ion-chip {
+            ion-label {
+              font-size: 1.5rem;
+              font-weight: bold;
+              letter-spacing: .5px;
+            }
+          }
+        }
+      }
 
-#container a {
-  text-decoration: none;
+      ion-button {
+        height: 3em !important;
+        transform: translateY(10%);
+
+        ion-text {
+          font-size: .85rem;
+          font-weight: bold;
+        }
+      }
+
+      ion-card {
+        box-shadow: -1px 11px 13 -6px rgba(87, 86, 86, .8);
+        border-radius: 8px !important;
+        margin: .20rem .15rem;
+      }
+    }
+
+    ion-list {
+      background: transparent;
+
+      ion-item {
+        width: 95%;
+        margin: auto;
+        border-radius: 5px;
+        margin-bottom: 2vh;
+
+        ion-label p {
+          font-size: .7rem;
+        }
+      }
+    }
+  }
+
 }
